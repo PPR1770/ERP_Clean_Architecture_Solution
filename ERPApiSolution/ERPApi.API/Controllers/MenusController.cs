@@ -53,7 +53,8 @@ namespace ERPApi.API.Controllers
         public async Task<ActionResult<BaseResponse<MenuDto>>> CreateMenu([FromBody] MenuDto menuDto)
         {
             var response = await _menuService.CreateMenuAsync(menuDto);
-            return CreatedAtAction(nameof(GetMenu), new { id = response.Data?.Id }, response);
+            return Ok(response);
+            //return CreatedAtAction(nameof(GetMenu), new { id = response.Data?.Id }, response);
         }
 
         [HttpPut("{id}")]

@@ -198,7 +198,7 @@ namespace ERPApi.Application.Services
                 await _userManager.AddToRoleAsync(user, "User");
 
                 // Send welcome email
-                await _emailService.SendWelcomeEmailAsync(user.Email!, $"{user.FirstName} {user.LastName}");
+                //await _emailService.SendWelcomeEmailAsync(user.Email!, $"{user.FirstName} {user.LastName}");
 
                 // Log audit
                 await _auditService.LogAsync(user.Id, "REGISTER", "User", user.Id);

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\.Net Core Apps\\ERP-APP\\ERPApiSolution\\ERPApi.Core\\ERPApi.Core.csproj": {}
+    "D:\\.Net Core Apps\\ERP_Clean_Architecture_Solution\\ERPApiSolution\\ERPApi.Core\\ERPApi.Core.csproj": {}
   },
   "projects": {
-    "D:\\.Net Core Apps\\ERP-APP\\ERPApiSolution\\ERPApi.Core\\ERPApi.Core.csproj": {
+    "D:\\.Net Core Apps\\ERP_Clean_Architecture_Solution\\ERPApiSolution\\ERPApi.Core\\ERPApi.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\.Net Core Apps\\ERP-APP\\ERPApiSolution\\ERPApi.Core\\ERPApi.Core.csproj",
+        "projectUniqueName": "D:\\.Net Core Apps\\ERP_Clean_Architecture_Solution\\ERPApiSolution\\ERPApi.Core\\ERPApi.Core.csproj",
         "projectName": "ERPApi.Core",
-        "projectPath": "D:\\.Net Core Apps\\ERP-APP\\ERPApiSolution\\ERPApi.Core\\ERPApi.Core.csproj",
+        "projectPath": "D:\\.Net Core Apps\\ERP_Clean_Architecture_Solution\\ERPApiSolution\\ERPApi.Core\\ERPApi.Core.csproj",
         "packagesPath": "C:\\Users\\hp\\.nuget\\packages\\",
-        "outputPath": "D:\\.Net Core Apps\\ERP-APP\\ERPApiSolution\\ERPApi.Core\\obj\\",
+        "outputPath": "D:\\.Net Core Apps\\ERP_Clean_Architecture_Solution\\ERPApiSolution\\ERPApi.Core\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

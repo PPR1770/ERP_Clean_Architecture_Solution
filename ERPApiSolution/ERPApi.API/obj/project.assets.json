@@ -6215,11 +6215,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\.Net Core Apps\\ERP-APP\\ERPApiSolution\\ERPApi.API\\ERPApi.API.csproj",
+      "projectUniqueName": "D:\\.Net Core Apps\\ERP_Clean_Architecture_Solution\\ERPApiSolution\\ERPApi.API\\ERPApi.API.csproj",
       "projectName": "ERPApi.API",
-      "projectPath": "D:\\.Net Core Apps\\ERP-APP\\ERPApiSolution\\ERPApi.API\\ERPApi.API.csproj",
+      "projectPath": "D:\\.Net Core Apps\\ERP_Clean_Architecture_Solution\\ERPApiSolution\\ERPApi.API\\ERPApi.API.csproj",
       "packagesPath": "C:\\Users\\hp\\.nuget\\packages\\",
-      "outputPath": "D:\\.Net Core Apps\\ERP-APP\\ERPApiSolution\\ERPApi.API\\obj\\",
+      "outputPath": "D:\\.Net Core Apps\\ERP_Clean_Architecture_Solution\\ERPApiSolution\\ERPApi.API\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -6240,8 +6240,8 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "projectReferences": {
-            "D:\\.Net Core Apps\\ERP-APP\\ERPApiSolution\\ERPApi.Application\\ERPApi.Application.csproj": {
-              "projectPath": "D:\\.Net Core Apps\\ERP-APP\\ERPApiSolution\\ERPApi.Application\\ERPApi.Application.csproj"
+            "D:\\.Net Core Apps\\ERP_Clean_Architecture_Solution\\ERPApiSolution\\ERPApi.Application\\ERPApi.Application.csproj": {
+              "projectPath": "D:\\.Net Core Apps\\ERP_Clean_Architecture_Solution\\ERPApiSolution\\ERPApi.Application\\ERPApi.Application.csproj"
             }
           }
         }

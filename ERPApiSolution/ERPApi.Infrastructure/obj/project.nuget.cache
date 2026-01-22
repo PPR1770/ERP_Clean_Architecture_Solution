@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "rkMIPFfpemI=",
+  "dgSpecHash": "xmoq5YN2COE=",
   "success": true,
-  "projectFilePath": "D:\\.Net Core Apps\\ERP-APP\\ERPApiSolution\\ERPApi.Infrastructure\\ERPApi.Infrastructure.csproj",
+  "projectFilePath": "D:\\.Net Core Apps\\ERP_Clean_Architecture_Solution\\ERPApiSolution\\ERPApi.Infrastructure\\ERPApi.Infrastructure.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\hp\\.nuget\\packages\\automapper\\12.0.0\\automapper.12.0.0.nupkg.sha512",
     "C:\\Users\\hp\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.0\\automapper.extensions.microsoft.dependencyinjection.12.0.0.nupkg.sha512",

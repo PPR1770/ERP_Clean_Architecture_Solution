@@ -2,6 +2,7 @@
 using ERPApi.Core.Entities;
 using ERPApi.Core.Interfaces;
 using Microsoft.EntityFrameworkCore;
+using System.Security.Claims;
 using System.Text.Json;
 
 namespace ERPApi.Application.Services
@@ -10,11 +11,13 @@ namespace ERPApi.Application.Services
     {
         private readonly IUnitOfWork _unitOfWork;
         private readonly IAuditService _auditService;
+        private readonly ICurrentUserService _currentService;
 
-        public MenuService(IUnitOfWork unitOfWork, IAuditService auditService)
+        public MenuService(IUnitOfWork unitOfWork, IAuditService auditService, ICurrentUserService currentService)
         {
             _unitOfWork = unitOfWork;
             _auditService = auditService;
+            _currentService = currentService;
         }
 
         public async Task<BaseResponse<List<MenuDto>>> GetMenusAsync()
@@ -119,7 +122,7 @@ namespace ERPApi.Application.Services
                 await _unitOfWork.SaveChangesAsync();
 
                 // Log audit
-                await _auditService.LogAsync("SYSTEM", "CREATE", "Menu", menu.Id.ToString(),
+                await _auditService.LogAsync(_currentService?.UserId, "CREATE", "Menu", menu.Id.ToString(),
                     newValues: JsonSerializer.Serialize(menuDto));
 
                 menuDto.Id = menu.Id;
@@ -175,7 +178,7 @@ namespace ERPApi.Application.Services
 
                 // Log audit
                 var newValues = JsonSerializer.Serialize(menuDto);
-                await _auditService.LogAsync("SYSTEM", "UPDATE", "Menu", id.ToString(), oldValues, newValues);
+                await _auditService.LogAsync(_currentService?.UserId, "UPDATE", "Menu", id.ToString(), oldValues, newValues);
 
                 menuDto.Id = menu.Id;
                 return new BaseResponse<MenuDto>(menuDto, "Menu updated successfully");
@@ -217,7 +220,7 @@ namespace ERPApi.Application.Services
                 await _unitOfWork.SaveChangesAsync();
 
                 // Log audit
-                await _auditService.LogAsync("SYSTEM", "DELETE", "Menu", id.ToString());
+                await _auditService.LogAsync(_currentService?.UserId, "DELETE", "Menu", id.ToString());
 
                 return new BaseResponse<bool>(true, "Menu deleted successfully");
             }
@@ -231,6 +234,7 @@ namespace ERPApi.Application.Services
         {
             try
             {
+                
                 var roleMenuRepo = _unitOfWork.Repository<RoleMenu>();
 
                 // Remove existing menus
@@ -254,7 +258,7 @@ namespace ERPApi.Application.Services
                 await _unitOfWork.SaveChangesAsync();
 
                 // Log audit
-                await _auditService.LogAsync("SYSTEM", "ASSIGN_MENUS", "Role", roleId,
+                await _auditService.LogAsync(_currentService?.UserId, "ASSIGN_MENUS", "Role", roleId,
                     newValues: JsonSerializer.Serialize(menuIds));
 
                 return new BaseResponse<bool>(true, "Menus assigned successfully");
