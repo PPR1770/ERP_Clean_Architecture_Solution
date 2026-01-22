@@ -1,0 +1,12 @@
+D:\.Net Core Apps\ERP-APP\ERPApiSolution\ERPApi.Core\bin\Debug\net9.0\ERPApi.Core.deps.json
+D:\.Net Core Apps\ERP-APP\ERPApiSolution\ERPApi.Core\bin\Debug\net9.0\ERPApi.Core.dll
+D:\.Net Core Apps\ERP-APP\ERPApiSolution\ERPApi.Core\bin\Debug\net9.0\ERPApi.Core.pdb
+D:\.Net Core Apps\ERP-APP\ERPApiSolution\ERPApi.Core\obj\Debug\net9.0\ERPApi.Core.csproj.AssemblyReference.cache
+D:\.Net Core Apps\ERP-APP\ERPApiSolution\ERPApi.Core\obj\Debug\net9.0\ERPApi.Core.GeneratedMSBuildEditorConfig.editorconfig
+D:\.Net Core Apps\ERP-APP\ERPApiSolution\ERPApi.Core\obj\Debug\net9.0\ERPApi.Core.AssemblyInfoInputs.cache
+D:\.Net Core Apps\ERP-APP\ERPApiSolution\ERPApi.Core\obj\Debug\net9.0\ERPApi.Core.AssemblyInfo.cs
+D:\.Net Core Apps\ERP-APP\ERPApiSolution\ERPApi.Core\obj\Debug\net9.0\ERPApi.Core.csproj.CoreCompileInputs.cache
+D:\.Net Core Apps\ERP-APP\ERPApiSolution\ERPApi.Core\obj\Debug\net9.0\ERPApi.Core.dll
+D:\.Net Core Apps\ERP-APP\ERPApiSolution\ERPApi.Core\obj\Debug\net9.0\refint\ERPApi.Core.dll
+D:\.Net Core Apps\ERP-APP\ERPApiSolution\ERPApi.Core\obj\Debug\net9.0\ERPApi.Core.pdb
+D:\.Net Core Apps\ERP-APP\ERPApiSolution\ERPApi.Core\obj\Debug\net9.0\ref\ERPApi.Core.dll

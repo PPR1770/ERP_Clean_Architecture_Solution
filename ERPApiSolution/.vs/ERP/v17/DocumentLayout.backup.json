@@ -1,0 +1,92 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\.Net Core Apps\\ERP-APP\\ERPApiSolution\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{7C92AD9A-4818-4D36-B6A7-7BEC3CA5F630}|ERPApi.API\\ERPApi.API.csproj|d:\\.net core apps\\erp-app\\erpapisolution\\erpapi.api\\controllers\\menuscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7C92AD9A-4818-4D36-B6A7-7BEC3CA5F630}|ERPApi.API\\ERPApi.API.csproj|solutionrelative:erpapi.api\\controllers\\menuscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7C92AD9A-4818-4D36-B6A7-7BEC3CA5F630}|ERPApi.API\\ERPApi.API.csproj|d:\\.net core apps\\erp-app\\erpapisolution\\erpapi.api\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7C92AD9A-4818-4D36-B6A7-7BEC3CA5F630}|ERPApi.API\\ERPApi.API.csproj|solutionrelative:erpapi.api\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7C92AD9A-4818-4D36-B6A7-7BEC3CA5F630}|ERPApi.API\\ERPApi.API.csproj|d:\\.net core apps\\erp-app\\erpapisolution\\erpapi.api\\attributes\\requirepermissionattribute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7C92AD9A-4818-4D36-B6A7-7BEC3CA5F630}|ERPApi.API\\ERPApi.API.csproj|solutionrelative:erpapi.api\\attributes\\requirepermissionattribute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FAA7E209-A4FE-4351-81A1-3C52D487385F}|ERPApi.Infrastructure\\ERPApi.Infrastructure.csproj|d:\\.net core apps\\erp-app\\erpapisolution\\erpapi.infrastructure\\services\\tokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FAA7E209-A4FE-4351-81A1-3C52D487385F}|ERPApi.Infrastructure\\ERPApi.Infrastructure.csproj|solutionrelative:erpapi.infrastructure\\services\\tokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "UsersController.cs",
+              "DocumentMoniker": "D:\\.Net Core Apps\\ERP-APP\\ERPApiSolution\\ERPApi.API\\Controllers\\UsersController.cs",
+              "RelativeDocumentMoniker": "ERPApi.API\\Controllers\\UsersController.cs",
+              "ToolTip": "D:\\.Net Core Apps\\ERP-APP\\ERPApiSolution\\ERPApi.API\\Controllers\\UsersController.cs",
+              "RelativeToolTip": "ERPApi.API\\Controllers\\UsersController.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABUAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-22T07:21:38.695Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MenusController.cs",
+              "DocumentMoniker": "D:\\.Net Core Apps\\ERP-APP\\ERPApiSolution\\ERPApi.API\\Controllers\\MenusController.cs",
+              "RelativeDocumentMoniker": "ERPApi.API\\Controllers\\MenusController.cs",
+              "ToolTip": "D:\\.Net Core Apps\\ERP-APP\\ERPApiSolution\\ERPApi.API\\Controllers\\MenusController.cs",
+              "RelativeToolTip": "ERPApi.API\\Controllers\\MenusController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-22T07:11:54.448Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "RequirePermissionAttribute.cs",
+              "DocumentMoniker": "D:\\.Net Core Apps\\ERP-APP\\ERPApiSolution\\ERPApi.API\\Attributes\\RequirePermissionAttribute.cs",
+              "RelativeDocumentMoniker": "ERPApi.API\\Attributes\\RequirePermissionAttribute.cs",
+              "ToolTip": "D:\\.Net Core Apps\\ERP-APP\\ERPApiSolution\\ERPApi.API\\Attributes\\RequirePermissionAttribute.cs",
+              "RelativeToolTip": "ERPApi.API\\Attributes\\RequirePermissionAttribute.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAQwCQAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-22T06:56:25.03Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "TokenService.cs",
+              "DocumentMoniker": "D:\\.Net Core Apps\\ERP-APP\\ERPApiSolution\\ERPApi.Infrastructure\\Services\\TokenService.cs",
+              "RelativeDocumentMoniker": "ERPApi.Infrastructure\\Services\\TokenService.cs",
+              "ToolTip": "D:\\.Net Core Apps\\ERP-APP\\ERPApiSolution\\ERPApi.Infrastructure\\Services\\TokenService.cs",
+              "RelativeToolTip": "ERPApi.Infrastructure\\Services\\TokenService.cs",
+              "ViewState": "AgIAAJYAAAAAAAAAAADwv0cAAABGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-22T06:49:46.879Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

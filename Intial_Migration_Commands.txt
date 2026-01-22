@@ -1,0 +1,66 @@
+﻿# 1. Drop the database if it exists
+sqlcmd -S DANISH-DEV -Q "DROP DATABASE IF EXISTS ERPSolution"
+
+# 2. Create fresh database
+sqlcmd -S DANISH-DEV -Q "CREATE DATABASE ERPSolution"
+
+# 3. Delete ALL migration files and folder
+Remove-Item -Path .\Migrations -Recurse -Force -ErrorAction SilentlyContinue
+
+# 4. Clean and rebuild solution
+dotnet clean
+dotnet build
+
+
+# 5. Create fresh migration
+dotnet ef migrations add InitialCreate --startup-project ../ERPApi.API/ERPApi.API.csproj
+
+# 6. Generate SQL script with IDEMPOTENT option (handles existing objects)
+dotnet ef migrations script --startup-project ../ERPApi.API/ERPApi.API.csproj --idempotent --output migration.sql
+
+
+# 7. Create a fixed SQL file with proper SET options
+@"
+USE [ERPSolution];
+GO
+SET QUOTED_IDENTIFIER ON;
+GO
+SET ANSI_NULLS ON;
+GO
+SET ANSI_PADDING ON;
+GO
+SET ANSI_WARNINGS ON;
+GO
+SET ARITHABORT ON;
+GO
+SET CONCAT_NULL_YIELDS_NULL ON;
+GO
+SET NUMERIC_ROUNDABORT OFF;
+GO
+
+-- Disable foreign key checks temporarily
+EXEC sp_msforeachtable 'ALTER TABLE ? NOCHECK CONSTRAINT ALL';
+GO
+
+"@ | Out-File -FilePath final_migration.sql -Encoding UTF8
+
+# 8. Add the migration SQL (skip the USE statement if already in file)
+Get-Content migration.sql | Where-Object { $_ -notmatch "^USE\s" } | Add-Content final_migration.sql
+
+# 9. Add re-enable foreign keys
+@"
+
+-- Re-enable foreign key checks
+EXEC sp_msforeachtable 'ALTER TABLE ? WITH CHECK CHECK CONSTRAINT ALL';
+GO
+"@ | Add-Content final_migration.sql
+
+# 10. Apply the migration
+sqlcmd -S DANISH-DEV -d master -I -i final_migration.sql
+
+
+# 11. Check if tables were created
+sqlcmd -S DANISH-DEV -d ERPSolution -Q "SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' ORDER BY TABLE_NAME"
+
+# 12. Check migration history
+sqlcmd -S DANISH-DEV -d ERPSolution -Q "SELECT * FROM __EFMigrationsHistory"
